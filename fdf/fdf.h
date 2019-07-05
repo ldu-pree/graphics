@@ -6,7 +6,7 @@
 /*   By: ldu-pree <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/04 17:03:09 by ldu-pree          #+#    #+#             */
-/*   Updated: 2019/07/04 18:19:39 by ldu-pree         ###   ########.fr       */
+/*   Updated: 2019/07/05 15:17:32 by ldu-pree         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,32 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
-
+# include "mlx/mlx.h"
+# include <math.h>
+# include <stdio.h>
+int *win;
+int *mlx;
+int let;
+int pos1;
+int pos2;
+int pos3;
+int pos4;
+int pos5;
+int pos6;
+int pos7;
+int pos8;
+int pos9;
 typedef struct		s_list
 {
 	void			*mlx;
 	void			*win;
 	struct s_list	*next;
 }					t_list;
+int		addx(int n, int colour);
+int		addo(int n, int colour);
+int		addob(int n);
+int		my_mouse_funct(int button, int x, int y, void *param);
+void	reset();
+void	grid();
+void	finish();
 #endif
