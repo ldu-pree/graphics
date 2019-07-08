@@ -6,7 +6,7 @@
 /*   By: ldu-pree <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/05 13:11:31 by ldu-pree          #+#    #+#             */
-/*   Updated: 2019/07/05 14:14:33 by ldu-pree         ###   ########.fr       */
+/*   Updated: 2019/07/08 18:23:38 by ldu-pree         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,137 +19,45 @@ int		addo(int n, int colour)
 
 	if (n == 1)
 	{	
-		y = 50;
-		while (y <= 250)
-		{
-			x = 50;
-			while (x <= 250)
-			{
-				mlx_pixel_put(mlx, win, x, y, colour);
-				x++;
-			}
-			y++;
-		}
+		draw_circle(150, 150, 100);
 	}
 	if (n == 2)
 	{	
-		y = 50;
-		while (y <= 250)
-		{
-			x = 350;
-			while (x <= 550)
-			{
-				mlx_pixel_put(mlx, win, x, y, colour);
-				x++;
-			}
-			y++;
-		}
+		draw_circle(450, 150, 100);
 	}
-
 	if (n == 3)
 	{	
-		y = 50;
-		while (y <= 250)
-		{
-			x = 650;
-			while (x <= 850)
-			{
-				mlx_pixel_put(mlx, win, x, y, colour);
-				x++;
-			}
-			y++;
-		}
+		draw_circle(750, 150, 100);
 	}
 
 	if (n == 4)
 	{	
-		y = 350;
-		while (y <= 550)
-		{
-			x = 50;
-			while (x <= 250)
-			{
-				mlx_pixel_put(mlx, win, x, y, colour);
-				x++;
-			}
-			y++;
-		}
+		draw_circle(150, 450, 100);
 	}
 
 	if (n == 5)
 	{	
-		y = 350;
-		while (y <= 550)
-		{
-			x = 350;
-			while (x <= 550)
-			{
-				mlx_pixel_put(mlx, win, x, y, colour);
-				x++;
-			}
-			y++;
-		}
+		draw_circle(450, 450, 100);
 	}
 
 	if (n == 6)
 	{	
-		y = 350;
-		while (y <= 550)
-		{
-			x = 650;
-			while (x <= 850)
-			{
-				mlx_pixel_put(mlx, win, x, y, colour);
-				x++;
-			}
-			y++;
-		}
+		draw_circle(750, 450, 100);
 	}
 
 	if (n == 7)
 	{	
-		y = 650;
-		while (y <= 850)
-		{
-			x = 50;
-			while (x <= 250)
-			{
-				mlx_pixel_put(mlx, win, x, y, colour);
-				x++;
-			}
-			y++;
-		}
+		draw_circle(150, 750, 100);
 	}
 
 	if (n == 8)
 	{	
-		y = 650;
-		while (y <= 850)
-		{
-			x = 350;
-			while (x <= 550)
-			{
-				mlx_pixel_put(mlx, win, x, y, colour);
-				x++;
-			}
-			y++;
-		}
+		draw_circle(450, 750, 100);
 	}
 
 	if (n == 9)
 	{	
-		y = 650;
-		while (y <= 850)
-		{
-			x = 650;
-			while (x <= 850)
-			{
-				mlx_pixel_put(mlx, win, x, y, colour);
-				x++;
-			}
-			y++;
-		}
+		draw_circle(750, 750, 100);		
 	}
-
 	return (1);
 }

@@ -6,7 +6,7 @@
 /*   By: ldu-pree <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/05 15:11:50 by ldu-pree          #+#    #+#             */
-/*   Updated: 2019/07/05 15:15:29 by ldu-pree         ###   ########.fr       */
+/*   Updated: 2019/07/08 14:45:17 by ldu-pree         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ int		my_mouse_funct(int button, int x, int y, void *param)
 {
 	//1 shoot
 	//2 aim
-	//3 knife
+	//3 knif
+	//pos1
 	if (button == 1 && x < 300 && y < 300 && pos1 == 0)
 	{
 		if (let == 1)
@@ -32,6 +33,7 @@ int		my_mouse_funct(int button, int x, int y, void *param)
 			pos1 = 2;
 		}
 	}
+	//pos2
 	if (button == 1 && x < 600 && x > 300 && y < 300 && pos2 == 0)
 	{
 		if (let == 1)
@@ -47,6 +49,7 @@ int		my_mouse_funct(int button, int x, int y, void *param)
 			pos2 = 2;
 		}
 	}
+	//pos3
 	if (button == 1 && x < 900 && x > 600 && y < 300 && pos3 == 0)
 	{
 		if (let == 1)
@@ -62,90 +65,102 @@ int		my_mouse_funct(int button, int x, int y, void *param)
 			pos3 = 2;
 		}
 	}
+	//pos4
 	if (button == 1 && x < 300 && y > 300 && y < 600 && pos4 == 0)
 	{
 		if (let == 1)
 		{
 			addx(4, 0x00FFFFFF);
 			let = 0;
+			pos4 = 1;
 		}
 		else
 		{
 			addo(4, 0x00FFFFFF);
 			let = 1;
+			pos4 = 2;
 		}
-		pos4 = 1;
 	}
+	//pos5
 	if (button == 1 && x > 300 && x < 600 && y > 300 && y < 600 && pos5 == 0)
 	{
 		if (let == 1)
 		{
 			addx(5, 0x00FFFFFF);
 			let = 0;
+			pos5 = 1;
 		}
 		else
 		{
 			addo(5, 0x00FFFFFF);
 			let = 1;
+			pos5 = 2;
 		}
-		pos5 = 1;
 	}
+	//pos6
 	if (button == 1 && x > 600 && x < 900 && y > 300 && y < 600 && pos6 == 0)
 	{
 		if (let == 1)
 		{
 			addx(6, 0x00FFFFFF);
 			let = 0;
+			pos6 = 1;
 		}
 		else
 		{
 			addo(6, 0x00FFFFFF);
 			let = 1;
+			pos6 = 2;
 		}
-		pos6 = 1;
 	}
+	//pos7
 	if (button == 1 && x < 300 && y > 600 && y < 900 && pos7 == 0)
 	{
 		if (let == 1)
 		{
 			addx(7, 0x00FFFFFF);
 			let = 0;
+			pos7 = 1;
 		}
 		else
 		{
 			addo(7, 0x00FFFFFF);
 			let = 1;
+			pos7 = 2;
 		}
-		pos7 = 1;
 	}
+	//pos8
 	if (button == 1 && x < 600 && x > 300 && y > 600 && y < 900 && pos8 == 0)
 	{
 		if (let == 1)
 		{
 			addx(8, 0x00FFFFFF);
 			let = 0;
+			pos8 = 1;
 		}
 		else
 		{
 			addo(8, 0x00FFFFFF);
 			let = 1;
+			pos8 = 2;
 		}
-		pos8 = 1;
 	}
+	//pos9
 	if (button == 1 && x > 600 && x < 900 && y > 600 && y < 900 && pos9 == 0)
 	{
 		if (let == 1)
 		{
 			addx(9, 0x00FFFFFF);
 			let = 0;
+			pos9 = 1;
 		}
 		else
 		{
 			addo(9, 0x00FFFFFF);
 			let = 1;
+			pos9 = 2;
 		}
-		pos9 = 1;
 	}
-	finish();
+	finish(0, 0);
 	return (0);
 }

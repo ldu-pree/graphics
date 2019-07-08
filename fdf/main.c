@@ -6,7 +6,7 @@
 /*   By: ldu-pree <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/04 15:44:01 by ldu-pree          #+#    #+#             */
-/*   Updated: 2019/07/05 15:18:17 by ldu-pree         ###   ########.fr       */
+/*   Updated: 2019/07/08 18:11:46 by ldu-pree         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@
 //int *win;
 //void	 drawCircle(int xc, int yc, int x, int y) 
 //{ 
-//    mlx_pixel_put(mlx, win, xc+x, yc+y, 0x00FFFFFF); 
-//    mlx_pixel_put(mlx, win, xc-x, yc+y, 0x00FFFFFF); 
-//    mlx_pixel_put(mlx, win, xc+x, yc-y, 0x00FFFFFF); 
-//    mlx_pixel_put(mlx, win, xc-x, yc-y, 0x00FFFFFF); 
-//    mlx_pixel_put(mlx, win, xc+y, yc+x, 0x00FFFFFF); 
-//    mlx_pixel_put(mlx, win, xc-y, yc+x, 0x00FFFFFF); 
-//    mlx_pixel_put(mlx, win, xc+y, yc-x, 0x00FFFFFF); 
-//    mlx_pixel_put(mlx, win, xc-y, yc-x, 0x00FFFFFF); 
+//    mlx_mlx_pixel_put(mlx, win, mlx, win, xc+x, yc+y, 0x00FFFFFF); 
+//    mlx_mlx_pixel_put(mlx, win, mlx, win, xc-x, yc+y, 0x00FFFFFF); 
+//    mlx_mlx_pixel_put(mlx, win, mlx, win, xc+x, yc-y, 0x00FFFFFF); 
+//    mlx_mlx_pixel_put(mlx, win, mlx, win, xc-x, yc-y, 0x00FFFFFF); 
+//    mlx_mlx_pixel_put(mlx, win, mlx, win, xc+y, yc+x, 0x00FFFFFF); 
+//    mlx_mlx_pixel_put(mlx, win, mlx, win, xc-y, yc+x, 0x00FFFFFF); 
+//    mlx_mlx_pixel_put(mlx, win, mlx, win, xc+y, yc-x, 0x00FFFFFF); 
+//    mlx_mlx_pixel_put(mlx, win, mlx, win, xc-y, yc-x, 0x00FFFFFF); 
 //} 
 //
 //int		addoo(int n)
@@ -64,7 +64,6 @@
 //    }
 //	return (0);
 //}
-
 int		my_key_funct(int keycode, void *param)
 {
 	int x;

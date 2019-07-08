@@ -6,7 +6,8 @@ SRC = addx.c \
 	  my_mouse_funct.c \
 	  finish.c \
 	  reset.c \
-	  grid.c
+	  grid.c \
+	  draw_circle.c
 
 OBJ = $(SRC:%.c=%.o)
 
