@@ -6,7 +6,7 @@
 /*   By: ldu-pree <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/04 17:03:09 by ldu-pree          #+#    #+#             */
-/*   Updated: 2019/07/08 18:08:53 by ldu-pree         ###   ########.fr       */
+/*   Updated: 2019/07/09 12:04:12 by ldu-pree         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ int		my_mouse_funct(int button, int x, int y, void *param);
 void	reset();
 void	grid();
 void	finish();
-void	draw_circle(int xCenter, int yCenter, int radius);
+void	draw_circle(int xCenter, int yCenter, int radius, int color);
+int		game_end();
 #endif

@@ -6,7 +6,7 @@
 /*   By: ldu-pree <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/05 12:18:43 by ldu-pree          #+#    #+#             */
-/*   Updated: 2019/07/05 14:13:02 by ldu-pree         ###   ########.fr       */
+/*   Updated: 2019/07/09 12:20:19 by ldu-pree         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ int		addx(int n, int colour)
 {
 	int x;
 	int y;
-	
+
+	//pos1down	
 	if (n == 1)
 	{	
 		y = 50;
@@ -24,22 +25,68 @@ int		addx(int n, int colour)
 	}
 	while (y <= 250 && x <= 250 && n == 1)
 	{
+		mlx_pixel_put(mlx, win, x, y, 0x00ffffff);
+		x++;
+		y++;
+	}
+	if (n == 1)
+	{	
+		y = 50;
+		x = 51;
+	}
+	while (y <= 250 && x <= 251 && n == 1)
+	{
 		mlx_pixel_put(mlx, win, x, y, colour);
 		x++;
 		y++;
 	}
+	if (n == 1)
+	{	
+		y = 50;
+		x = 49;
+	}
+	while (y <= 250 && x <= 249 && n == 1)
+	{
+		mlx_pixel_put(mlx, win, x, y, colour);
+		x++;
+		y++;
+	}
+
+	//pos1up
 	x = 50;
+	y = 250;
+	while (y >= 50 && x <= 250 && n == 1)
+	{
+		mlx_pixel_put(mlx, win, x, y, 0x00ffffff);
+		x++;
+		y--;
+	}
+	if (n == 1)
+	{	
+		y = 250;
+		x = 51;
+	}
 	while (y >= 50 && x <= 250 && n == 1)
 	{
 		mlx_pixel_put(mlx, win, x, y, colour);
 		x++;
 		y--;
 	}
-	if (n == 2)
+	if (n == 1)
 	{	
-		y = 50;
-		x = 350;
+		y = 250;
+		x = 49;
 	}
+	while (y >= 50 && x <= 250 && n == 1)
+	{
+		mlx_pixel_put(mlx, win, x, y, colour);
+		x++;
+		y--;
+	}
+
+	//pos2down
+	x = 350;
+	y = 50;
 	while (y <= 250 && x <= 550 && n == 2)
 	{
 		mlx_pixel_put(mlx, win, x, y, colour);
@@ -64,7 +111,7 @@ int		addx(int n, int colour)
 		x++;
 		y++;
 	}
-	x = 650;
+	x = 649;
 	while (y >= 50 && x <= 850 && n == 3)
 	{
 		mlx_pixel_put(mlx, win, x, y, colour);
