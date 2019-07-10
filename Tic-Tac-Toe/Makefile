@@ -8,7 +8,7 @@ SRC = addx.c \
 	  reset.c \
 	  grid.c \
 	  draw_circle.c \
-	  game_end.c
+	  game_end.c 
 
 OBJ = $(SRC:%.c=%.o)
 
